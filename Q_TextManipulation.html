@@ -1,0 +1,84 @@
+<!--
+The properties in the CSS code modify the text in the following ways:
+
+color sets the text color to blue.
+direction sets the text direction to right-to-left (rtl).
+letter-spacing adds 2 pixels of space between the letters of a word.
+word-spacing adds 5 pixels of space between the words of a sentence.
+text-indent indents the first line of a paragraph by 20 pixels.
+text-align aligns the text to the center of the document.
+text-decoration underlines the text.
+text-transform converts the text to uppercase.
+white-space prevents line breaks within the text and keeps it on a single line.
+text-shadow adds a shadow around the text, offset by 2 pixels horizontally and vertically, with a blur radius of 4 pixels and a transparency of 50% (using rgba()).
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .blue-text
+    {
+      color: blue;
+    }
+    
+    .rtl-text 
+    {
+      direction: rtl;
+    }
+    
+    .letter-spacing-text 
+    {
+      letter-spacing: 2px;
+    }
+    
+    .word-spacing-text 
+    {
+      word-spacing: 5px;
+    }
+    
+    .indent-text
+    {
+      text-indent: 20px;
+    }
+    
+    .center-text 
+    {
+      text-align: center;
+    }
+    
+    .underline-text 
+    {
+      text-decoration: underline;
+    }
+    
+    .uppercase-text 
+    {
+      text-transform: uppercase;
+    }
+    
+    .nowrap-text
+    {
+      white-space: nowrap;
+    }
+    
+    .shadow-text
+    {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <p class="blue-text">This is a blue text.</p>
+  <p class="rtl-text">This text is right-to-left.</p>
+  <p class="letter-spacing-text">This text has increased letter spacing.</p>
+  <p class="word-spacing-text">This text has increased word spacing.</p>
+  <p class="indent-text">This text has an indent.</p>
+  <p class="center-text">This text is centered.</p>
+  <p class="underline-text">This text is underlined.</p>
+  <p class="uppercase-text">This text is in uppercase.</p>
+  <p class="nowrap-text">This text has nowrap and will not break.</p>
+  <p class="shadow-text">This text has a shadow.</p>
+</body>
+</html>
