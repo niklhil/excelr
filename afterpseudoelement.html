@@ -1,0 +1,28 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>after pseudo elelnts</title>
+        <style>
+            h1::after
+            {
+                content: url(smiley.jpg);
+            }
+            h2::before{
+                content: url(smiley.jpg);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>welcome</h1>
+        <p>the ::after pseudo elemnet insertsafter the content of an element</p>
+        <h1>welcome</h1>
+        <p>the ::after pseudo elemnet insertsafter the content of an element</p>
+
+        <h2>Goodbye</h2>
+        <b><p>this is ::before pseudo element</p></b>
+        
+    </body>
+    </html>
