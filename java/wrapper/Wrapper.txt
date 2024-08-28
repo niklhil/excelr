@@ -1,0 +1,66 @@
+Wrapper Classes:   
+------------------------
+1) Primitive to object conversion and vice-a-versa
+2) String to number conversion
+
+Primitives                  Wrapper Classes
+----------		  -----------------
+1) byte	  -	  Byte
+2) short	  -	  Short
+3) int	  -	  Integer
+4) long	  -	  Long
+5) float	  -	  Float
+6) double	  -	  Double
+7) boolean  -	  Boolean
+8) char	  -	  Character 
+
+Applications of Wrapper Classes:
+
+1) Hit Counter implementation   
+2) To store data in collections
+3) Online calculator     
+4) To process commandline arguments
+
+Constructors of Wrapper classes:
+--------------------------------------------
+Byte:
+------
+Byte(byte value)
+Byte(String value) throws NumberFormatException 
+
+Short:
+--------
+Short(short value)
+Short(String value) throws NumberFormatException
+
+Integer:
+----------
+Integer(int value)
+Integer(String value) throws NumberFormatException
+
+Long:
+-------
+Long(long value)
+Long(String value) throws NumberFormatException
+
+Float:
+--------
+Float(float value)
+Float(double value)
+Float(String value) throws NumberFormatException
+
+Double:
+----------
+Double(double value)
+Double(String value) throws NumberFormatException
+
+Boolean:
+------------
+Boolean(boolean value)
+Boolean(String value) 
+
+Character:
+-------------
+Character(char value)
+
+* This is the only wrapper class to not accept string value  */

@@ -1,0 +1,5 @@
+Pass by Value:
+In Java, all primitive types (e.g., int, boolean, char) are passed by value. When a method is called and a primitive type is passed as an argument, a copy of the value is created and passed to the method. Any modifications made to the parameter within the method do not affect the original value outside the method.
+
+Pass by Reference (or Reference Copy):
+In Java, all non-primitive types (e.g., objects, arrays) are passed by reference. When an object or array is passed as an argument, a copy of the reference (address) to the object is created and passed to the method. This means that changes made to the object's properties or elements within the method will affect the original object.

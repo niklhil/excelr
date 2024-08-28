@@ -1,0 +1,14 @@
+Iterator (i)
+------------
+         a)  public boolean hasNext()=> To know whether element is there or not 
+         b)  public Object next()=> To get element from collection
+         c)  public void remove()=> To remove the current element
+
+ Iterator (i)
+     |
+ ListIterator(i):
+------------------
+ListIterator is a child class for Iterator and in addition to that, the methods which has by ListIterator are
+
+a)	public boolean hasPrevious()=>To know whether previous element is there or not 
+b)	public Object previous()=> To get previous element 

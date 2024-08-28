@@ -1,0 +1,18 @@
+What is Bootstrap?
+Bootstrap is an opensource free front-end framework for faster and easier web development
+Bootstrap includes HTML and CSS based design templates for forms, buttons, tables, navigation and many other, as well as optional JavaScript plugins
+
+Bootstrap also gives you the ability to easily create responsive designs.
+
+Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.
+
+Why Use Bootstrap?
+Advantages of Bootstrap:
+
+Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+
+Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+
+Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework
+
+Browser compatibility: Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox, Edge, Safari, and Opera). Note that if you need support for IE11 and down, you must use either BS4 or BS3.

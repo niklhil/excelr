@@ -1,0 +1,12 @@
+TreeMap:
+------------
+•	It has no default capacity.
+•	It stores entries in the ascending order of the keys.
+•	It can contain only unique keys, but values can be duplicated.
+•	It does not allow null key but can have many null values.
+•	It uses compareTo (compare) method to compare keys.
+•	It uses Red-Black tree data structure to store entries.
+•	It is non-synchronized and hence does not guarantee data consistency in thread environment.
+•	It provides good performance in thread environment since it is not synchronized.
+•	It guarantees iteration order.
+•	It is rich in functionalities.

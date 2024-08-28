@@ -1,0 +1,40 @@
+Abstract class:
+-------------------
+Two types of classes:
+    1)  Concrete class   (Its object can be created)
+    2)  Abstract class    (Its object can't be created)
+
+Abstract Class
+-------------------
+A class which can not be instantiated and used only as a parent class is called as abstract class. It may contain:
+
+        1) Defined methods
+        2) Undefined methods
+        3) Both defined and undefined methods.
+        4) An empty class can also be abstract
+
+1) Defined methods
+    abstract class X
+    {
+      void test(){}
+      void show(){}
+    }
+
+2) Undefined methods
+    abstract class X
+    {
+       abstract void test();
+       abstract void show();
+   }
+
+3) Both defined and undefined methods
+    abstract class X
+    {
+      void test(){}
+      abstract void show();
+    }
+
+4) Empty class can also be an abstract class
+    abstract class X 
+    {
+    }

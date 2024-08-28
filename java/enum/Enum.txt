@@ -1,0 +1,37 @@
+Enum:
+--------
+Constants can be created using the final modifier, but it doesn't allow the creation of related constants.
+
+These constants do not provide the type safety for Java applications. To overcome this drawback, we use enums.
+
+An enum is a Java feature which allows to create a set of related constants.
+
+Enums provide type safety by restricting the possible values to a predefined set. This prevents accidental assignment of invalid values.
+
+Enums are similar to class types, hence they can have constructors, data members, and member methods. Despite this class-like nature, enums cannot be instantiated using the new keyword.
+
+java.lang.Enum is the super class of enums in Java.
+
+An enum is neither a String nor an int; rather, an enum constant's type is the enum itself. For instance, WINTER, SPRING, SUMMER, and FALL belong to the enum type Season.
+
+Enum constants in Java are implicitly static by default. This means you can access them using the enum type's name, without needing to create an instance of the enum.
+
+By default, every enum constant is object the same enum type.
+
+An enum can be declared either outside or inside a class, but it cannot be declared within a method.
+
+An enum declared outside a class must not carry the static, final, abstract, protected, or private modifiers.
+
+Enum constructors can take arguments and can be overloaded.
+
+Enum constructors can never be directly invoked in code; they are automatically called upon when an enum is initialized.
+
+Enum constructors are private by default.
+
+The semicolon at the end of an enum declaration is optional. The following variations are permissible:
+enum Foo { ONE, TWO, THREE}
+enum Foo { ONE, TWO, THREE};
+
+Enums enhance the readability of your code by giving meaningful names to constant values instead of using arbitrary numbers or strings.
+
+Enums work well with switch statements, making your code more readable when you need to perform different actions based on enum values.

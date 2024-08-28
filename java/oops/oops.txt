@@ -1,0 +1,52 @@
+Object Oriented Programming (OOPs)
+---------------------------------------------------
+OOPs is a programming concept where applications are developed using a set of classes and objects. It simplifies implementation of real life requirements and improves code readability and reusability.
+
+Object-oriented programming has several advantages 
+
+1) OOP provides a clear structure for the programs
+2) OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+3) OOP makes it possible to create full reusable applications with less code and shorter development time
+
+Features of OOps:
+
+Abstraction:
+Abstraction is hiding implementation complexity and disclosing only the necessary information to the users. It helps in reducing programming complexity.
+Abstraction in java is implemented by using  abstract class and interfaces.
+
+Enacapsulation:
+Encapsulation is a process of binding code and data together into a single unit. It provides data security and improves code maintainability. 
+We can create a fully encapsulated class in Java by making all the data members of the class private.
+
+Inheritance:
+Inheritance is a mechanism in which a child class aquires all visible features of its parent class, except for constuctor. 
+ The child class can have its own properties and methods. Inheritance is implemented by using the "extends" keyword.
+
+Different Types of Inheritance are:
+1) Single Inheritance
+2) Multilevel Inheritance. 
+3) Hierarchical Inheritance. 
+4) Multiple Inheritance 
+5) Hybrid Inheritance 
+
+Benefits of Inheritance:
+
+1) Code reusability
+2) Productivity
+3) Maintainability
+4) Cost Effectiveness
+5) Quality
+
+Polymorphism:
+
+It is an OOPs feature by which a single entity takes different forms and behaves differently in different cases. 
+In other words, it is the capability of a method to do different things in different contexts.
+ 
+There are two types of polymorphism in Java
+1) Compile time polymorphim / Static Binding / Early Binding
+2) Runtime polymorphism / Dynamic Binding / Late Binding
+
+1) Compile time polymorphim: It is a process in which method call is resolved at compile time itself based on the method name and its signature.
+ Ex:Method overloading
+2) Runtime polymorphis: It is a process in which method call is resolved at runtime rather than compile time, based on the child object to which
+ the parent reference variable is pointing.

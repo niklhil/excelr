@@ -1,0 +1,23 @@
+Increment & Decrement Operators:
+-----------------------------------------------
+Increment Operators:  ( ++x,   x++)
+----------------------------
+1) Pre-Increment Operator
+    int x=10;
+    System.out.println(++x); //11
+
+2) Post-Increment Operator
+    int x=10;
+    System.out.println(x++); //10
+    System.out.println(x);//11
+
+Decrement Operators:   ( --x,   x--)
+-----------------------------
+1) Pre-Decrement Operator
+    int x=10;
+    System.out.println(--x); //9
+
+2) Post-Decrement Operator
+    int x=10;
+    System.out.println(x--);//10
+    System.out.println(x);//9

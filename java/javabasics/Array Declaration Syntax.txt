@@ -1,0 +1,53 @@
+Single Dimensional Array Declaration Syntax:
+----------------------------------------------------------
+int x[] = new int[3];  
+int []x = new int[3];
+int [] x = new int[3];
+int[] x = new int[3];
+int[]x = new int[3];
+int x[] = new int[]{1,2,3,3};
+int x[] = {1, 2, 3, 3};
+int x[] = {1, 2, 3, 3,};                 //NO ERROR, Compiler just ignores the last comma
+
+int x[]=new int[];                       //Error, dimension missing
+int x[] = new int[3]{1, 2, 3, 3};   //Error, dimension not allowed when array is initialized
+int[] x = new [3]int;	               //Error since bracket position changed on RHS
+int x[3]=new int[]; 	               //Error - size should not be specified on LHS
+
+1) size should not be specified on the left side.
+2) size should be specified on the right side.
+3) size is not allowed when array is initialized.
+3) Drawback of arrays in Java is they are static in nature i.e., size is specified at the time of declaration itself.
+
+Two-Dimensional array:
+---------------------------------
+int     x[][]  = new int[3][3];
+int      [][]x  = new int[3][3];
+int      [][]   x = new int[3][3];
+int[][]      x  = new int[3][3];
+int[][]x        = new int[3][3];
+int       []x[] = new int[3][3];
+
+int      x[][]  = new int[][] 
+		     { 
+		        {1,2,3},
+		        {1,2,3},
+		        {1,2,3}
+		     };
+
+int      x[][]  = new int[][] { 
+		        {1,2,3},
+		        {1,2,3},
+		        {1,2,3},
+		     };
+
+
+int      x[][] = new int[][];    // Error, at least row dimension required 
+int      x[][] = new int x[][3];   // Error, row dimension required 
+int      x[3][3] = new int x[][];  //Error, dimension not allowed on LHS
+int      x[3][3] = new int x[3][3];// Error, dimension not allowed on LHS
+int      x[][]  = new int[3][3] { 
+		             {1,2,3},
+		             {1,2,3},
+		             {1,2,3}
+		        };                  //Error

@@ -1,0 +1,121 @@
+Collection Framework:
+-----------------------------
+Collection:
+Collection is a dynamic storage structure which stores only objects. It can support both homogeneous and heterogeneous elements. 
+
+Why we use collection:
+
+A)	Collections are dynamic i.e. they increase and decrease storage capacity automatically
+B)	They have built-in methods for common tasks such sorting, searching etc.
+C)	They can be thread safe, if required
+
+Collections can be navigated using enhanced for loop
+Collections support auto-boxing
+Collections support generics which provides type safety
+We need to import java.util.* package to use collections.
+
+"Collections"
+Collections built-in class has a set of utility methods such as sort(), binarySearch(), frequency(),  min(), max(),etc. to process collections efficiently.
+
+"Collection"
+Collection built-in interface is the foundation of collection framework. It has methods such as add(), remove(), iterate() etc. which provide basic functionalities for collections.
+
+There are 3 types of collections:
+	1) List based collections
+	2) Set based collections
+	3) Queue based collections
+
+1) List based collections :
+	a) They store elements in insertion order
+	b) They support index based access
+	c) They allow duplicate elements
+	d) They allow null value
+
+	Example :  ArrayList, LinkedList,vectorlist
+
+2) Set based collections :
+        a) They store only unique elements. 
+	b) They do not support index based access.
+	c)  HashSet and LinkedHashSet and Treeset are set based collections
+
+   SortedSet based collections :
+         	a) Stores elements in sorted order automatically.
+    
+   NavigableSet based collection :
+       It stores elements in sorted order and allows operations like
+
+	a) Range queries (for example, you can retrieve elements between a specified 	    	    start and end value.),    
+
+	b) Finding closest elements (elements that are immediately before and after the 		    target value in the sorted order of the set, as well as the elements that are equal to the target value if they exist.)
+
+   A NavigableSet may be accessed and traversed in either ascending or descending order.
+   TreesSet is NavigableSet based collection.
+
+3) Queue based collections:
+	
+a) They follow FIFO (First In, First Out) ordering of elements. This means that the element inserted first in the queue will be the first element to be removed.
+
+b) Elements are appended to the end of the queue and are removed from the beginning of the queue.
+
+c) A normal queue in java allows duplicate and null values.
+
+d) It does not support index based access.
+
+e) We can traverse the queue elements either using the forEach loop or iterator.
+
+f) The Queue supports all methods of Collection interface including insertion, deletion etc.
+
+g) Queue is not synchronized. Blocking queues are synchronized.
+
+h) Most frequently used Queue implementations are LinkedList & PriorityQueue
+
+i) In a priority queue, elements are assigned priorities. When accessing elements, the element with the highest priority is removed first. 
+
+Deque based collection:
+      a) Elements can be added & removed from both the ends
+      b) It can be used as FIFO or LIFO
+      c) It works as both stack(LIFO) and queue(FIFO)
+
+Collection(i):
+----------------
+1)	boolean add(Object element)=> To add the element
+2)	boolean addAll(Collection element)=>To copy all the elements from a collection
+3)	void remove(Object element)=> To delete an element from a collection
+4)	int size()=> To know the collection size
+5)	boolean contains(Object element) – To search for an element
+6)	Object[] toArray()=> To convert collection to array
+7)	void clear()=> To delete all elements in a collection 
+8)	Iterator Iterator()=> To traverse through collection
+
+List(i)
+
+1)	public void add(int index, Object element)=> To add the element by using index
+2)	public Object get(int index)=> To get elements
+3)	public void remove(int index)=> To remove elements
+4)	public Object set(int index, Object element)=> To change existing elements
+5)	public ListIterator listIterator()=> It travels with collection in bi-direction
+
+
+Collection classes: 
+------------------------
+1) List(i):
+     a) ArrayList
+     b) LinkedList
+     c) Vector
+
+2) Set(i):
+     a) HashSet
+     b) LinkedHashSet
+
+    SortedSet (i)
+       ^
+       |
+   NavigableSet (i)
+     a) TreeSet
+
+3) Queue (i):
+  a) LinkedList
+  b) PriorityQueue
+
+4) Deque (i):
+  a) ArrayDeque

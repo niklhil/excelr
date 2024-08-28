@@ -1,0 +1,28 @@
+Method-Signature consists of:
+----------------------------------------
+1) Number of parameters
+2) Type of parameters
+3) Order of parameters
+
+void test()                                //Unique Signature
+
+void test(int x)                         //Unique Signature
+void test(double d)                 //Unique Signature
+//void test(int i)                        //Duplicate Signature
+
+void test(int x,float y)                  //Unique Signature
+void test(float x, int y)                 //Unique Signature
+
+void test(int x,float y,double z)       //Unique Signature
+void test(float x,int y,double z)       //Unique Signature
+void test(double x,float y,int z)       //Unique Signature
+
+//void test(float i,int j,double k)      //Duplicate Signature
+
+
+
+Method overloading:
+--------------------------
+Method overloading is a feature in object-oriented programming languages that allows a class to have multiple methods with the same name but different signatures.
+
+Overloading allows methods to handle different types or numbers of arguments, providing flexibility to callers. Developers can choose the appropriate overloaded method based on the specific context or available data without needing to remember multiple method names.

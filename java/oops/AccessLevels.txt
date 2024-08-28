@@ -1,0 +1,13 @@
+Access specifiers are used to control the visibility of class and its members.
+
+Access Levels		Access Specifiers
+-------------------	                ------------------------	
+1) Public                        -            public
+2) Private                       -            private
+3) Default                      -                 -
+4) Protected                  -             protected
+
+
+
+
+

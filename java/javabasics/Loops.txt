@@ -1,0 +1,16 @@
+1) while(condition)
+    {
+     
+    }
+
+2) do
+    {
+
+    }while(condition);
+
+3) for(Initialization; condition; expression)
+    {
+
+    }
+
+4) forEach Loop

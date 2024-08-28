@@ -1,0 +1,25 @@
+Package :
+-------------
+Package is a folder containing related java programs which can be imported by using import statement.
+
+Advantages:
+•	Namespace Enhancement:  More than one class with same name can be created.
+•	Code reusability: Code can be reused by importing package using import statement.
+•	Maintainability: Changes are reflected everywhere.
+•	Searchability: Required class can be searched easily.
+
+Points to remember:
+
+•  Package should be named in small letters
+•  Package statement should be the first statement in a java file
+•  If package is not specified then the class belongs to default package. 
+•  Default package does not have any name.
+•  import statement is used to import package contents.
+•  import packagename.*: This statement imports all classes of the specified package.
+•  import packagename.classname: This statement imports specified class.
+•  Multi-type import statement does not import inner packages. Hence they need to be imported explicitly.
+•  Default members are not accessible to other packages.
+•  Public members are accessible to all packages.
+•  Protected members can be accessed in different packages by inheritance but not using object or class name.
+•  Private members are not accessible to other packages.
+

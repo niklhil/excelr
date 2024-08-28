@@ -1,0 +1,29 @@
+Vector:
+---------
+•	Vector is a legacy collection based on List interface.
+•	Default capacity 10. 
+•	It stores elements in the insertion order.
+•	It allows null values and duplicate elements.
+•	It supports index based access i.e. random access of elements
+•	Vector can be navigated by using iterator, listiterator, foreach and enumeration. 
+•	It is thread safe (synchronized), hence guarantees data consistency in thread environment.
+•	It provides low performance in thread environment since it is synchronized.
+•	It allows specifying increment size.
+•	It doubles its capacity if increment size is not specified.
+•	Even though it is legacy collection it is reengineered to fit modern collection framework.
+•	It supports backward compatibility with old projects.
+
+How can we create the Vector?
+
+1)	Vector v1=new Vector();
+2)	Vector v1=new Vector(int capacity);  
+3)	Vector v1=new Vector(int capacity, int incrementSize);
+4)	Vector v1=new Vector(Collection c);
+
+Method of Vector
+-------------------------
+void addElement(Object)   
+
+Enumeration(i)					
+boolean hasMoreElements()			
+Object nextElement()				

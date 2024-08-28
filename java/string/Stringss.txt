@@ -1,0 +1,71 @@
+Strings:
+----------
+In java string is an object of String built-in class type. String class is in java.lang package.
+
+In Java, strings are immutable. Once created, they cannot be changed. To modify a string, a new string object with the desired changes is created. This immutability guarantees the integrity of the string's contents and promotes safer programming practices.
+
+String class is final hence it can't be subclassed.
+
+final public class String implements CharSequence
+{
+   char c[];       // String can store A-Z,a-z,0-9, &,^ etc.
+}
+
+class StringChild extends String   // Compilation error
+{
+}
+
+How to create strings:
+----------------------------
+byte x[]={65,66,67,68};
+String s=new String(x);
+Sop(s); //ABCD
+
+byte x[]={65,66,67,68};
+String s=new String(x,0,2); //0 is start index and 2 is number of values
+Sop(s);//AB
+
+char c[]={'A','B','C','D'};
+String s=new String(c);
+Sop(s);//ABCD
+
+char c[]={'A','B','C','D'};
+String s=new String(c,0,2); //0 is start index and 2 is number of characters
+Sop(s);//AB
+
+StringBuffer sb=new StringBuffer("ABCD");
+String s=new String(sb);
+Sop(s);//ABCD
+
+StringBuilder sb=new StringBuilder("ABCD");
+String s=new String(sb);
+Sop(s);//ABCD
+
+String literal pool / String pool / String constant pool
+----------------------------------------------------------------------
+Group of characters within a pair of double quotes is called as string literal. 
+It is also an object of String class type.  
+
+String literals are stored in string literal pool.
+
+The String literal pool is a memory area in Java that stores string literals and optimizes memory usage by reusing them, leading to improved performance and reduced memory consumption.
+Example : "ABCD"  - String literal
+
+public static void main(String args[])
+{
+  String s1=new String("ABCD");      //Here, we have two strings a) "ABCD"  b) s1 string object
+  Sop(s1);//ABCD
+
+  String s2=new String("ABCD");      // Here, only one string object - s2,  "ABCD" is reused 
+  Sop(s2);//ABCD
+
+  Sop("ABCD");  // "ABCD" is reused from String Constant Pool
+  Sop("ABcD"); // New String literal since "ABcD" has c as small letter
+}
+---------------------------------------------------------------
+How to call string methods?
+
+String s1=new String("ABCD");
+s1.equals(s2);
+"ABCD".equals(s1);
+"".equals(s1);

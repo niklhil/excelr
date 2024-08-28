@@ -1,0 +1,61 @@
+Serialization:
+----------------
+Serialization is a process in which the contents and metadata of an object are converted into a byte stream format. This format can then be saved in a file or database, or transmitted over a network to a remote application without causing compatibility issues.
+
+Serialization transforms objects into a compact bytestream format which can be efficiently transmitted over the network.
+
+Serialized object can be encrypted and digitally signed to protect from unauthorized access.
+
+
+
+
+
+
+
+Serialization refers to the process of converting an object's state and metadata into a byte stream, which can then be stored in a file, transmitted over a network, or otherwise persisted. Deserialization is the reverse process, where a byte stream is converted back into an object's state. The main purposes of serialization are data persistence, data sharing, and communication between different applications or systems.
+
+When you serialize an object, you're converting its data, including any nested objects it references, into a sequence of bytes. This byte stream contains information about the structure and values of the object's state, metadata, and sometimes even class information. Serialization is about preserving an object's state and structure in a portable and compact format.
+
+Here are some key points about serialization in Java:
+
+Java objects can be serialized by implementing the Serializable interface. This interface doesn't have any methods; it serves as a marker that indicates an object can be serialized. When an object is serialized, its instance variables and the state of its object graph (linked objects) are converted into a stream of bytes.
+
+When an object is serialized, the Java runtime recursively serializes its entire object graph. This means that if an object contains references to other objects, those objects are also serialized along with their data.
+
+The ObjectInputStream and ObjectOutputStream classes in the java.io package are used for serialization and deserialization, respectively. They handle the conversion between object and byte stream formats.
+
+While the default serialization mechanism provided by Java is convenient, you can also customize the serialization process by implementing the writeObject() and readObject() methods in your class. This allows you to control how the object's state is serialized and deserialized.
+
+Fields marked as transient are not serialized. This can be useful for excluding sensitive or non-serializable data from the serialization process.
+
+Serialization and deserialization can have security implications, as maliciously crafted serialized data could potentially lead to security vulnerabilities. It's important to validate and sanitize serialized data, especially when deserializing from untrusted sources.
+
+Serialization is commonly used for saving and loading game states, caching, storing user preferences, communication between different parts of a distributed application, and more.
+
+To perform serialization in Java, you generally create an ObjectOutputStream to write objects to a stream (e.g., a file), and an ObjectInputStream to read and reconstruct objects from that stream. The serialized data can then be saved, transmitted, or processed as needed.
+
+What happens in serialization:
+---------------------------------------
+The values of the instance variables (data fields) of the object are serialized. This includes primitive types (integers, floats, etc.), other objects, and arrays.
+
+Serialization often includes information about the class of the object itself. This information might include the class's name, its superclass (if applicable), and any interfaces it implements. This allows the deserialization process to reconstruct the correct class when recreating the object.
+
+Benefits of Serialization:
+-------------------------------
+Serialization allows objects to be efficiently represented as compact byte streams. This is more efficient than manually converting data into formats like JSON or XML, which can be verbose and require additional parsing.
+
+Serialized data can be transferred between different platforms and programming languages, promoting interoperability.
+
+Serialized data can be encrypted, signed, or otherwise secured before transmission or storage to ensure data integrity and prevent unauthorized access.
+
+Serialization mechanisms ensure that data is accurately reconstructed, reducing the risk of data corruption or loss during transmission or storage.
+
+Serialization abstracts low-level details, making it easier to persist and share object data without getting involved in manual data formatting and encoding.
+
+Real life examples:
+------------------------
+Social media platforms often use serialization to persist user profiles, posts, and interactions, as well as to transmit data between different components of the system.
+
+E-commerce websites use serialization to store product information, user profiles, shopping carts, and transaction history.
+
+Financial applications use serialization to store transaction histories, account balances, and user preferences.

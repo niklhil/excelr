@@ -1,0 +1,55 @@
+Abstract Class  
+-------------------
+abstract class BankAccount
+{
+   int customerId;
+   String customerName;
+
+   public void show()
+   {
+       System.out.println(customerId);
+       System.out.println(customerName);
+   } 
+
+  abstract double interest(double amount);
+}
+
+class SBAccount extends BankAccount
+{
+  double interest(double amount)  //Overriding method
+  {
+    /* SB Specific Implementation */
+  } 
+}
+
+class FDAccount extends BankAccount
+{
+  double interest(double amount) //Overriding method
+  {
+    /* FD Specific Implementation */
+  } 
+}
+
+class CAccount extends BankAccount
+{
+  double interest(double amount) 
+  {
+    /* Zero interest */
+  } 
+}
+
+/*
+class Main
+{
+  public static void main(String args[])
+  {
+    FDAccount fd=new FDAccount();
+    double interest=fd.interest(100000);
+    System.out.println(interest);
+
+    SBAccount sb=new SBAccount();
+    interest=sb.interest(100000);
+    System.out.println(interest);
+  }
+}
+*/

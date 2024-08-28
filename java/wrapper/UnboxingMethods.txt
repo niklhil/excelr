@@ -1,0 +1,24 @@
+/* 
+   Boxing is a process of converting primitive to wrapper class object explicitly.
+   UnBoxing is a process of converting wrapper class object to primitive explicitly.
+*/
+
+UnBoxing Methods:
+--------------------------
+Number :
+------------
+public byte byteValue()       
+public short shortValue()     
+public int intValue()
+public long longValue()
+public float floatValue()
+public double doubleValue()
+
+Character:
+---------------
+public char charValue()
+
+Boolean:
+-------------
+public boolean booleanValue()
+

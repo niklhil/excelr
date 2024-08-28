@@ -1,0 +1,14 @@
+Garbage Collection:
+--------------------------
+•	Garbage collection is the process of automatically identifying and reclaiming memory occupied by objects that are no longer in use by the application.
+•	Java garbage collection is performed by garbage collector
+•	Garbage collector is a part of JVM
+•	Garbage collector provides Automatic Memory Management in Java.
+•	Garbage collector runs as a low priority thread (Daemon thread) in the background. Garbage collector is under the complete control of JVM, hence we cannot make garbage collection to take place at our wish i.e. we cannot force garbage collection.
+•	System.gc() or Runtime.getRuntime().gc() can start garbage collection but this doesn’t guarantee that garbage collection actually takes place. Garbage Collection is under the control of JVM.  If JVM honors the request then Garbage Collection takes place otherwise not.
+•	Object may or may not be garbage collected - no guarantee.
+•	We cannot predict the order in which objects are garbage collected.
+•	There is no guarantee that the garbage collector runs and releases the memory.
+•	The protected void finalize() is inherited to all java classes from Object super class. This method is used to execute cleanup code to release external resources. This method executes just before the object is garbage collected.
+•	We can override finalize method to execute object level cleanup code.
+•	This method executes if & only if garbage collection takes place, but there is no guarantee for the execution of garbage collector. Hence we cannot rely on finalize method to release the resources. We need to have some other means to make it sure that the object level resources are released safely.

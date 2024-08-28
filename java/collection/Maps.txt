@@ -1,0 +1,27 @@
+Map Concept:
+------------------
+•	Map is a dynamic storage structure which stores key value pairs.
+•	Key and value both should be objects.
+•	Keys should be unique but values can be duplicated.
+•	Maps are based on Map built-in interface. 
+•	Maps support auto-boxing 
+•	Maps support generics to provide application type safety.
+
+Collection vs. Map:
+-------------------------
+1) Collections stores only values, whereas maps store key-value pairs.
+2) Collections are based on Collection interface, whereas maps are based on Map interface.
+3) Collections can be navigaged by using iterator, foreach loop etc. whereas maps can not be directly navigated.
+
+Methods in Map(i) Built in interface:
+----------------------------------------------
+public void put(Object key, Object value)
+public Object get(Object key)
+public void remove(Object key)
+
+There are three types of maps:
+----------------------------------------
+1) HashMap
+2) LinkedHashMap
+3) TreeMap
+

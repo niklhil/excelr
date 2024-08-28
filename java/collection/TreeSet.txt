@@ -1,0 +1,20 @@
+TreeSet:
+-----------
+•	It is based on red-black tree data structure. Red-Black tree is a kind of binary search tree.
+•	It has no default capacity.
+•	It stores only unique elements.
+•	It stores elements in sorted ascending order.
+•	It does not allow null value, causes NullPointerException.
+•	It does not support index based access.
+•	It is non-synchronized, hence does not guarantee data consistency in thread environment.
+•	It allows only those generic types that are comparable.
+•	Its access and retrieval time is quite fast.
+•	It compares elements using its compareTo (or compare) method.   
+•	It is rich in functionalities.
+•	It can be iterated using iterator and enhanced for loop.
+
+How to create TreeSet:
+
+TreeSet ts=new TreeSet();  //No default capacity
+TreeSet ts=new TreeSet(Collection c);
+TreeSet ts=new TreeSet(Compartor c)

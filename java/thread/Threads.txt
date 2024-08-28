@@ -1,0 +1,112 @@
+Multithreading:
+-------------------
+Thread: It is an independent part of a program which can run simultaneously with other threads, without out affecting them.
+
+Multi-Threading: It is a programming concept in which functionalities are implemented using threads & run simultaneously to make maximum use of CPU cycles. Java has built-in support for multi-threaded programming.
+
+Thread:   (java.lang.*)
+----------
+1) public void setName(String name)            
+        It is used to name or rename a thread.
+
+2) public String getName()
+        It returns thread name.
+
+3) public int getPriority() 
+       It returns thread priority.
+
+4) public void setPriority(int priority)
+       It is used to set thread priority.
+
+5) public void start()
+       It is used to start a thread. A started thread goes to runnable state.
+
+6) public void run() 
+      It contains thread functionality
+
+7) public static void sleep(int millisecs) throws InterruptedException
+    It makes a thread inactive for a certain length of time. A sleeping thread releases CPU cycles so that other threads can use it.
+
+8) public void join() throws InterruptedException 
+    It allows a thread to wait until another thread completes the execution. For example, if join() is called on a thread T in main     thread then main waits until T completes the execution.
+
+9) public boolean isAlive() 
+      It checks whether a thread is alive or dead.
+
+10)public static Thread currentThread()
+       Returns the reference of current thread
+--------------------------------------------------------------------
+
+Thread priority decides which thread runs when, not how long it executes.
+
+MAX_PRIORITY       -  10
+NORM_PRIORITY    -    5
+MIN_PRIORITY        -    1
+
+A thread with MAX_PRIORITY will execute first.
+
+A thread with MIN_PRIORITY will execute last.
+
+Threads of the same priority share CPU cycles equally and work in round robin fashion.
+
+If a thread with low priority does not hand over the CPU to a high priority thread, then the high priority thread grabs the CPU from low priority Thread. This is called Preemptive Multitasking.
+
+ T1       T2
+(10)      (5)
+
+ T1       T2
+(10)     (10)
+
+ T1       T2
+ (5)      (10)
+
+ T1       T2      T3       T4
+ (1)       (5)      (10)     (10)
+
+Thread States / Thread Life Cycle:
+-----------------------------------------------
+1) New
+2) Runnable
+3) Running
+4) Sleep/Blocked/Wait/Join
+5) Dead
+
+New :          A thread which is not started is new thread.
+
+Runnable:   A started thread, waiting for CPU cycles to begin or continue the execution is runnable thread.
+
+Running:     A thread in execution is a running thread.
+
+Sleep:         It is an inactive state that thread enters on executing sleep method. It comes out of this state on the completion of                    sleep time.
+
+Blocked:     It is an inactive state that thread enters, when it tries to acquire a lock on the resource which is already locked by 	  some other thread. A thread goes to a blocked state even when an IO operation is required for its continuation.
+
+Wait: 	 It is an inactive state that thread enters on executing wait method. It comes out of this state when it is notified by 		 other thread.
+
+Dead:        If a thread exits run method, it goes to dead state.
+
+How to create a thread?
+--------------------------------
+1) By extending Thread class
+2) By implementing Runnable interface
+
+As Java does not support multiple inheritance w.r.t class, hence it is better to create threads by implementing Runnable interface.
+
+By extending Thread class:
+------------------------------------
+1) Create a child of Thread class  
+2) Override run()
+3) Create object of the child class
+4) Invoke start() of the child
+
+By implementing Runnable interface:
+-------------------------------------------------
+Runnable (i)
+----------------
+public void run()
+
+1) Implement Runnable interface
+2) Override run()
+3) Instantiate the Runnable interface implemenation class
+4) Create Thread class object using the Runnable interface object
+5) Invoke the start()

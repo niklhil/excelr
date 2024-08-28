@@ -1,0 +1,14 @@
+Java Life Cycle:
+--------------------
+1) Source code development
+2) Compilation
+3) Class loading
+       a) All static data members are created and initialized to default values
+       b) All static blocks are executed sequentially
+4) main() starts 
+5) If main() creates any object, then all its instance variables are created and initialized to default values.
+6) There after all non-static blocks are executed sequentially
+7) Then constructor is executed.
+8) main() continues.
+9) Finally, main() ends
+    

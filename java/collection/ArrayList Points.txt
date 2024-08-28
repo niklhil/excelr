@@ -1,0 +1,19 @@
+ArrayList:
+------------
+•	ArrayList is a List based collection.
+•	Its default capacity is 10. However it grows as we add more elements.
+•	It is internally implemented by using array of Object class type.
+•	It stores elements in insertion order.
+•	It allows null values and duplicate elements.
+•	It supports index based access i.e. random access of elements
+•	It is non-synchronized, hence does not guarantee data consistency in thread environment.
+•	It is best suited for data storage and retrieval.
+•	Insertion and deletion from the middle of ArrayList is not efficient since it need to shift the elements to reorganize them.
+•	It can be navigated using iterator, listiterator and enhanced for loop.
+•	Memory consumption is low in ArrayList since it stores only elements.
+ 
+ How to create ArrayList:
+
+                   ArrayList a1=new ArrayList() //10
+  	   ArrayList a1=new ArrayList(int capacity)
+                   ArrayList a1=new ArrayList(Collection c)

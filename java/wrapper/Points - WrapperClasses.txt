@@ -1,0 +1,47 @@
+Wrapper classes in Java are used to convert primitive data types into objects, as Java is an object-oriented language and requires objects for certain operations. Here are some important points about wrapper classes:
+
+Definition: Wrapper classes are classes provided by Java to represent each of the eight primitive data types (e.g., int, double, char) as objects.
+
+Primitive Data Types: Java has eight primitive data types: byte, short, int, long, float, double, char, and boolean.
+
+Wrapper Class Hierarchy: The wrapper classes are part of the java.lang package and extend the abstract class Number.
+
+Naming Convention: The naming convention for wrapper classes is simple - the first letter of the primitive type capitalized (e.g., Integer, Double, Character).
+
+Autoboxing: Java automatically converts primitive data types to their corresponding wrapper classes when needed, known as autoboxing. For example, int to Integer.
+
+Unboxing: Unboxing is the process of converting an object of a wrapper class back to its corresponding primitive data type. For example, Integer to int.
+
+Wrapper Class Constructors: Each wrapper class provides constructors to create objects from primitive values or strings.
+
+valueOf() Method: Wrapper classes provide static valueOf() methods to create objects from primitive values or strings, which is often used for autoboxing.
+
+Parse Methods: Wrapper classes also provide static parseXXX() methods (e.g., parseInt(), parseDouble()) to convert strings to primitive values.
+
+Common Methods: Wrapper classes have methods to perform various operations, such as toString(), equals(), and compareTo().
+
+Immutable: Wrapper classes are immutable, meaning their values cannot be changed after creation.
+
+Null Values: Wrapper classes can hold null values, which represents the absence of a value for a primitive type.
+
+Utility Methods: Some wrapper classes provide utility methods, like Character.isDigit(), Character.isLetter(), etc.
+
+Autoboxing and Collections: Autoboxing allows primitive values to be used in collections (e.g., List<Integer>), making it convenient to work with collections of primitives.
+
+Primitive Defaults: When using wrapper classes in collections, they are initialized with default values (e.g., null for objects, 0 for numbers).
+
+Wrapper Classes for Booleans: Boolean class provides the TRUE and FALSE constants and helpful methods like Boolean.parseBoolean().
+
+Wrapper Classes for Characters: The Character class provides various utility methods like isDigit(), isLetter(), and toUpperCase().
+
+Wrapper Classes for Numbers: The numeric wrapper classes (Integer, Double, etc.) provide various arithmetic operations and value range constants (e.g., MAX_VALUE, MIN_VALUE).
+
+Wrapper Classes for Conversions: Wrapper classes are frequently used in scenarios like parsing user input and converting data types.
+
+Memory Considerations: Wrapper classes consume more memory than their primitive counterparts, so excessive usage should be avoided for large datasets.
+
+Caching: For certain values (e.g., int from -128 to 127), Java caches wrapper objects to improve memory efficiency and performance.
+
+Comparisons: When comparing wrapper objects, always use .equals() instead of ==, as == compares references and not values.
+
+Wrapper Classes in Collections: Wrapper classes are commonly used in collections and maps to store primitive values as objects.

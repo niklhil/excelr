@@ -1,0 +1,200 @@
+J2EE Introduction:
+-------------------------
+1) Java Standard Edition
+2) Java Enterprise Edition / J2EE  
+3) Java Micro Edition / J2ME
+
+Web-application is an online application for a specific purpose for general users is called as web application, examples include online shopping websites, social media platforms, news portals, mailing systems etc.
+
+Enterprise application is a large and complex application for business organizations to automate business processes. It is deployed on a private network and is accessible only to the employees of the organization and vendors of the company. It requires high security to protect sensitive business data like financial records, customer information and proprietary details. Examples include Salesforce, Microsoft Dynamics, SAP ERP, CRM Software etc.
+
+Enterprise Java Application Architecture:
+-------------------------------------------------------
+1) Two tier architecture
+2) Three tier architecture
+3) N-tier architecture
+
+A two-tier architecture is a software architecture where presentation & business layer run on client machine and data is stored on database server
+
+A three-tier architecture consists of a presentation tier, a business logic tier, and a data storage tier.
+
+The Three-tier Architecture based application is divided into 3 parts;
+1) Presentation Layer (Runs on Client tier)
+2) Application Layer (Runs on Business tier)
+3) Database Layer (Runs on Data tier)
+
+The Presentation Layer is the topmost layer of an application. This is the layer seen when using the software(Interface, web pages). By using the software we access web pages. Its main function is to communicate with the application layer. This layer passes information given by the user in terms of keyboard actions and mouse clicks to the application layer.
+
+The Application Layer is also known as the Business logic layer. Here’s where we find logic controls and functionality that processes data received from the presentation layer and database layer. It acts as an intermediary between the presentation and database layer.
+
+The Database Layer is the layer that stores data with the retrieval, storage and execution methods made by the application layer. It contains methods that connect to the database and performs the required actions needed. These are Insert, update or delete. Just to name a few.
+
+N-tier architecture is a multi-tier architecture that has no limit on number of tiers. It is suitable for development of enterprise level client-server applications that provide scalability, security, fault tolerance, reusability, and maintainability. 
+
+It helps developers to create flexible and reusable applications.
+
+N-tier application architecture provides a model by which developers can create flexible, reusable, & easily maintable applications. By segregating an application into tiers, developers acquire the option of modifying or adding a specific layer, instead of reworking the entire application. 
+
+Web Components:
+------------------------
+Servlet & JSP are called as web components.
+
+Web container:   
+-------------------
+Web container is a runtime environment for web components (Servlet & JSP) & is a part of the application server. It is also called as servlet container
+
+Functions of web container  
+1)  Maps client request URI to the respective web component (Servlet/JSP)
+2)  Verifies whether request URI has proper access rights
+3)  It manages life cycle of the servlets & JSP i.e. Instantiation, initialization, execution to handle client request
+4)  Delivers the result to the client
+
+EJB container is a runtime environment for EJB components.  
+Application server contains a web container and ejb container and can handle Servlets, JSPs and EJBs. 
+EJBs can be deployed only on Application Servers.
+
+Web Server:
+It is a server which handles HTTP requests, serves static content to clients, and forwards dynamic requests to application servers.
+
+A web server primarily hosts websites and serves static content.
+
+Ex: Apache HTTP Server, Nginx
+
+Application Server:
+It is a server which executes server-side code, manages transactions, and generates dynamic content for web applications, often specialized in specific programming languages or technologies.
+
+An application server is designed to host and run dynamic web applications, executing server-side code, handling database interactions, and generating dynamic content.
+
+Example of Application Servers are:
+JBoss: Open-source server from JBoss community.
+Glassfish: From Sun Microsystem. 
+Weblogic: From Oracle. 
+Websphere: From IBM.
+
+Apache Tomcat, is an open source web server and web container for servlet & JSP based applications. It was developed by the Apache Software Foundation. It handles every single HTTP request from a browser by creating a separate thread.
+
+Web-server can serve only static content (HTML pages, CSS, images, audio and videos) to the clients.
+Application server can serve both static & dynamic (JSP,Servlet, EJB etc.) content to the clients.
+
+Web-server can host only static web applications
+Application server can host both dynamic web application & enterprise applications
+
+Webserver supports only HTTP (HyperText Tansfer Protocol), HTTPS protocol.
+Application server supports various protocols such as HTTP, HTTPS, RPC, FTP, SMTP etc.
+
+Webserver is less secure.
+Application server is more secure.
+
+Webserver is not resource (CPU, Memory etc.) intensive.
+Application server is resource intensive.  
+
+WEB-INF folder:
+Under this folder compiled Java class files, web.xml, & Jar files are kept. Tomcat hides the contents of this directory from users, for security.
+
+The contents of this directory are as follows:-
+
+web.xml:   
+This is a key file for running a dynamic web-application. It defines various features of the application such as welcome page, session timeout, initialization parameters, servlet mapping details etc.
+
+classes folder:
+This holds the compiled Java classes of the application
+
+lib folder:
+This contains jar files needed by Tomcat to run the application.
+
+HTTP Request Types:
+------------------------------
+1) GET
+2) POST
+3) PUT
+4) DELETE 
+5) HEAD
+6) TRACE
+7) PATCH
+8) OPTIONS
+
+GET vs. POST  
+
+Request URL
+http://localhost:8080/ServletExamples/login?user=scott&pwd=tiger
+
+http         			: Protocol
+localhost 			: Server IP Address
+8080       			: Tomcat port number	
+/ServletExamples		: Context path
+/login      			: URL Pattern
+/Servlets/login 		: URI
+user=scott&pwd=tiger 	: Query String
+user			: Request Parameter
+pwd			: Request Parameter 
+
+User :  scott
+Pass : ******
+         Login
+
+-------------------------------------------------------------------------------------------------------------
+Servlet & JSP
+
+What is Servlet?
+--------------------
+It is a serverside Java program used to implement application controller.
+
+How to Create Servlet?
+------------------------------
+1) By implementing Servlet (i)
+2) By extending GenericServlet (C)
+3) By extending HttpServlet (C)
+
+Types Of Servlets:
+-------------------------
+1) Generic Servlet
+2) HttpServlet
+
+Servlet Life Cycle Methods:
+------------------------------------
+1) public void init(ServletConfig cfg)
+2) public void service(ServletRequest request, ServletResponse response) throws Exception
+3) public void destroy()
+
+HTTP:
+--------
+HTTP Request Types:
+-------------------
+GET
+POST
+PUT
+DELETE
+OPTION
+TRACE
+
+
+http://localhost:8080/SevletExamples/hello
+
+http         			: Protocol
+localhost 			: Server IP Address
+8080       			: Tomcat port number	
+/ServletExamples		: Context path
+/hello      			: URL Pattern  (Uniform Resource Locater)
+/Servlets/hello 		: URI (Unique Resource Identifier)
+http://localhost:8080/SevletExamples/hello  :   URL
+
+http://localhost:8080/SevletExamples/authentication?user=scott&password=tiger
+
+?user=scott&password=tiger : Query String
+user=Request Parameter
+password=Request Parameter
+
+GET vs. POST
+
+Servlet Request Flow:
+-----------------------------
+1) Client sends request to Server.
+2) Server forwards the request to the web-container.
+3) Webcontainer maps the request in web.xml and gets the servlet reference.
+4) It creats the servlet object.
+5) It initializes the servlet instance by invoking its init() method.
+6) It invokes public void service() of the servlet
+7) The public void service() typecasts the ServletRequest & ServletResponse objects to HttpServletRequest & HttpServletResponse types respectively.
+8) The public void service() now calls protected service() of the servelt.
+9) The protected service() checks the client request type and accordingly invokes doGet() / doPost().
+10) Finally the doXXX() methods executes, generates result and forwards it to the client.

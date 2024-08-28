@@ -1,0 +1,23 @@
+LinkedHashSet:  
+---------------------
+•	Its default capacity is 16.
+•	It stores elements in Hashtable 
+•	It uses doubly linked list to maintain the insertion order of elements.
+•	It stores only unique elements.
+•	It allows one null value.
+•	It uses hashing mechanism to store elements.
+•	It provides constant time performance for operations such as add, remove, contains & size.
+•	It uses equals() method to compare elements and detect duplicates.
+•	It can be iterated using iterator and enhanced for loop.
+•	Its default load factor is 0.75 and permitted range is 0 - 1.0 
+•	It is non-synchronized, hence does not guarantee data consistency in thread environment.
+
+How to create LinkedHashSet
+
+         LinkedHashSet h1=new LinkedHashSet();   //16
+         LinkedHashSet h1=new LinkedHashSet(int capacity); 
+         LinkedHashSet h1=new LinkedHashSet(int capacity, float FillRatio);=>default value for fill ratio is 0.75
+         LinkedHashSet h1=new LinkedHashSet(Collection obj);
+
+
+

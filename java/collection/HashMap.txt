@@ -1,0 +1,19 @@
+HashMap:
+-------------
+•	Its default capacity is 16.
+•	It can have only unique keys, but values can be duplicated.
+•	It allows single null key and multiple null values.
+•	It uses hashing mechanism to store key-value pairs.
+•	It does not guarantee the order of the keys.
+•	It gives constant time performance for operations such as put, get etc.
+•	It uses equals method to compare keys.
+•	Its default load factor is 0.75 and permitted range is 0 - 1.0  
+•	It is non-synchronized and hence does not guarantee data consistency in thread environment.
+•	It provides good performance in thread environment since it is not synchronized.
+
+How to create HashMap
+
+	 1)  HashMap h1=new HashMap();
+                 2)  HashMap h1=new HashMap(int Capacity); 
+                 3)  HashMap h1=new HashMap(int Capacity, float FillRatio);
+                 4)  HashMap h1=new HashMap(Map m);

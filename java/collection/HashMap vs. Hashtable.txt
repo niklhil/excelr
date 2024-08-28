@@ -1,0 +1,6 @@
+HashMap vs. Hashtable
+1) HashMap is not synchronized whereas Hashtable is synchronized
+2) HashMap does not guarantee data consistency in thread environment whereas Hashtable guarantees data consistency in thread environment
+3) HashMap is high in performance whereas Hashtable is low in performance
+4) Default capacity of HashMap is 16, whereas the default capacity of Hashtable 11
+5) HashMap is not a legacy map whereas Hashtable is a legacy map.

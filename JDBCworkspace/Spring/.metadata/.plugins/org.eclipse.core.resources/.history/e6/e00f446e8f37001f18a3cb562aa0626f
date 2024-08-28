@@ -1,0 +1,9 @@
+package june24;
+
+public class Main {
+		public static void main(String[] args) throws ClassNotFoundException
+		{
+			Class.forName("com.mysql.cj.jdbc.Driver.db3");
+			System.out.println("Driver is loaded");
+		}
+}

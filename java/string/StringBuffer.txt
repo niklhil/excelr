@@ -1,0 +1,14 @@
+String vs. StringBuffer
+----------------------------
+1) String is immutable
+    StringBuffer is mutable
+
+2) As string is immutable, repeated modifications of it leads to poor performance.
+   StringBuffer's mutability ensures better performance for repeated modifications.
+
+3) equals() of String class compares contents
+    equals() of StringBuffer class compares references
+
+4) As String is immutable thread safety can be achieved without synchronization
+    As StringBuffer is mutable it uses synchronization to achieve thread safety.
+

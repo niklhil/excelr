@@ -1,0 +1,10 @@
+throw:
+The throw keyword is used to explicitly throw an exception within a block of code.
+You can throw any exception (including built-in exceptions or user defined exceptions) using the throw keyword.
+When throw is used, the execution of the current method is halted, and the control is transferred to the nearest suitable exception handler (catch block or caller method).
+
+throws:
+The throws keyword is used in a method signature to declare that the method may throw one or more types of exceptions.
+It is used to specify the exceptions that a method can potentially throw, allowing the caller of the method to handle or propagate those exceptions.
+Multiple exceptions can be declared by separating them with commas.
+When a method is declared with throws, it is indicating that the method itself is not handling the exception(s) internally and is delegating the responsibility of handling them to the caller.

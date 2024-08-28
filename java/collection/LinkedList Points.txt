@@ -1,0 +1,20 @@
+LinkedList:
+--------------
+•	LinkedList is a List based collection.
+•	LinkedList has the features of both list and queue since it implements both List and Deque interfaces.
+•	Its default capacity is 0. However it grows as we add elements.
+•	It stores elements in the insertion order.   
+•	It allows null values and duplicate elements.
+•	LinkedList uses doubly linked list to store elements. It consists of nodes, where each node has data field and reference fields pointing to the previous and next node in the list.
+•	It does not store elements in contiguous memory locations. 
+•	Memory consumption is high in LinkedList since it needs to store elements and references of neighbor elements.
+•	Insertion and deletion from the middle of the linkedlist is efficient.
+•	It supports index based access i.e. random access of elements
+•	It is best suited for data storage and manipulation.
+•	It can be navigated using iterator, listiterator and enhanced for loop.
+•	It is non-synchronized, hence does not guarantee data consistency in thread environment.
+
+How to construct LinkedList
+
+        LinkedList l1=new LinkedList();
+        LinkedList l1=new LinkedList(Collection c);

@@ -1,0 +1,10 @@
+StringBuffer vs. StringBuilder
+-------------------------------------
+1) StringBuffer synchronized
+    StringBuilder is not synchronized
+
+2) StringBuffer guarantees data consistency in thread environment.
+    StringBuilder does not guarantee data consistency in thread environment
+
+3) As StringBuffer is synchronized, its performance is low in thead environment.
+    As StringBuilder is not synchronized, its performance is high in thead environment.

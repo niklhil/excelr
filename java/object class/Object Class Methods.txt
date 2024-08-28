@@ -1,0 +1,16 @@
+Object class:
+-----------------
+Object class is the super most class in Java.
+
+List of Object Class Methods:
+---------------------------------------
+  1)  public final Class getClass()
+  2)  public int hashCode()
+  3)  public boolean equals(Object ref)
+  4)  protected Object clone() throws CloneNotSupportedException
+  5)  public String toString()
+  6)  protected void finalize() throws Throwable
+  7)  public final void notify()
+  8)  public final void notifyAll()
+  9)  public final void wait() throws InterruptedException
+

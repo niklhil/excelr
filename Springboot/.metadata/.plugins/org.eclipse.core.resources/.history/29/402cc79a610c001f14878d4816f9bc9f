@@ -1,0 +1,14 @@
+package com.springboot.SpringBootGreetings;
+
+@RestController
+public class GreetingsController {
+	@Value("Welcome...")
+	private String message;
+	
+	@RequestingMapping("/hello")
+	public String greet() 
+	{ 
+		return message;
+	}
+
+}
